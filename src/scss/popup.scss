@@ -1,0 +1,28 @@
+[data-form] {
+    position: relative;
+}
+
+[data-popup] {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+[data-message] {
+    padding: 2rem;
+    font-size: 1.4rem;
+    background: #ccc;
+    box-shadow: 0 0 .2rem .2rem #909090;
+    position: relative;
+    span {
+        position: absolute;
+        right: .5rem;
+        top: .2rem;
+        cursor: pointer;
+    }
+}

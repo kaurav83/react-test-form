@@ -4,9 +4,21 @@ const InputField = ({
     name,
     value,
     type,
-    onChange
+    onChange,
+    id
 }) => {
     return (
-        <div></div>
+        <div>
+            <input 
+                type={type}
+                name={name}
+                value={value}
+                onChange={onChange}
+                id={id}
+                required
+            />
+        </div>
     );
 };
+
+export default InputField;
