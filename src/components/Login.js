@@ -69,12 +69,12 @@ class Login extends Component {
                     </div>
                     <div data-choice>
                         <input type="submit" value="Отправить" />
-                        <a data-link href="#">Forgot password?</a>
+                        <a data-link href="">Forgot password?</a>
                     </div>
                 </form>
                 <div data-popup id="popup">
                     {
-                        this.props.logined.length != 0 ?
+                        this.props.logined.length !== 0 ?
                             <div data-message>
                                 <span onClick={this.handleButton}>x</span>
                                 Привет, {this.props.logined}!
